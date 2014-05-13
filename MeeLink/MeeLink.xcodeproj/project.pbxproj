@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F87AD43E1921F642009B3A80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AD43D1921F642009B3A80 /* Foundation.framework */; };
+		F87AD4401921F642009B3A80 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AD43F1921F642009B3A80 /* CoreGraphics.framework */; };
+		F87AD4421921F642009B3A80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AD4411921F642009B3A80 /* UIKit.framework */; };
+		F87AD4481921F642009B3A80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F87AD4461921F642009B3A80 /* InfoPlist.strings */; };
+		F87AD44A1921F642009B3A80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4491921F642009B3A80 /* main.m */; };
+		F87AD44E1921F642009B3A80 /* MLKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD44D1921F642009B3A80 /* MLKAppDelegate.m */; };
+		F87AD4511921F642009B3A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87AD44F1921F642009B3A80 /* Main.storyboard */; };
+		F87AD4541921F642009B3A80 /* MLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4531921F642009B3A80 /* MLKViewController.m */; };
+		F87AD4561921F642009B3A80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87AD4551921F642009B3A80 /* Images.xcassets */; };
+		F87AD45D1921F642009B3A80 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AD45C1921F642009B3A80 /* XCTest.framework */; };
+		F87AD45E1921F642009B3A80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AD43D1921F642009B3A80 /* Foundation.framework */; };
+		F87AD45F1921F642009B3A80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87AD4411921F642009B3A80 /* UIKit.framework */; };
+		F87AD4671921F642009B3A80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F87AD4651921F642009B3A80 /* InfoPlist.strings */; };
+		F87AD4691921F642009B3A80 /* MeeLinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4681921F642009B3A80 /* MeeLinkTests.m */; };
+		F87AD4751921F956009B3A80 /* MLKMomentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4741921F956009B3A80 /* MLKMomentTableViewController.m */; };
+		F87AD4791921FB69009B3A80 /* MLKActivitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4781921FB69009B3A80 /* MLKActivitiesTableViewController.m */; };
+		F87AD47E1921FBF3009B3A80 /* MLKProfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD47D1921FBF3009B3A80 /* MLKProfilesViewController.m */; };
+		F87AD4811921FC0B009B3A80 /* MLKShipmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4801921FC0B009B3A80 /* MLKShipmentTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F87AD4601921F642009B3A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87AD4321921F642009B3A80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87AD4391921F642009B3A80;
+			remoteInfo = MeeLink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F87AD43A1921F642009B3A80 /* MeeLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeeLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87AD43D1921F642009B3A80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F87AD43F1921F642009B3A80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F87AD4411921F642009B3A80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F87AD4451921F642009B3A80 /* MeeLink-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeeLink-Info.plist"; sourceTree = "<group>"; };
+		F87AD4471921F642009B3A80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F87AD4491921F642009B3A80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F87AD44B1921F642009B3A80 /* MeeLink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MeeLink-Prefix.pch"; sourceTree = "<group>"; };
+		F87AD44C1921F642009B3A80 /* MLKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLKAppDelegate.h; sourceTree = "<group>"; };
+		F87AD44D1921F642009B3A80 /* MLKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLKAppDelegate.m; sourceTree = "<group>"; };
+		F87AD4501921F642009B3A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F87AD4521921F642009B3A80 /* MLKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLKViewController.h; sourceTree = "<group>"; };
+		F87AD4531921F642009B3A80 /* MLKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLKViewController.m; sourceTree = "<group>"; };
+		F87AD4551921F642009B3A80 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F87AD45B1921F642009B3A80 /* MeeLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeeLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87AD45C1921F642009B3A80 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F87AD4641921F642009B3A80 /* MeeLinkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeeLinkTests-Info.plist"; sourceTree = "<group>"; };
+		F87AD4661921F642009B3A80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F87AD4681921F642009B3A80 /* MeeLinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeeLinkTests.m; sourceTree = "<group>"; };
+		F87AD4731921F956009B3A80 /* MLKMomentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKMomentTableViewController.h; path = Moments/MLKMomentTableViewController.h; sourceTree = "<group>"; };
+		F87AD4741921F956009B3A80 /* MLKMomentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKMomentTableViewController.m; path = Moments/MLKMomentTableViewController.m; sourceTree = "<group>"; };
+		F87AD4771921FB69009B3A80 /* MLKActivitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKActivitiesTableViewController.h; path = Activities/MLKActivitiesTableViewController.h; sourceTree = "<group>"; };
+		F87AD4781921FB69009B3A80 /* MLKActivitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKActivitiesTableViewController.m; path = Activities/MLKActivitiesTableViewController.m; sourceTree = "<group>"; };
+		F87AD47C1921FBF3009B3A80 /* MLKProfilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKProfilesViewController.h; path = Profiles/MLKProfilesViewController.h; sourceTree = "<group>"; };
+		F87AD47D1921FBF3009B3A80 /* MLKProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKProfilesViewController.m; path = Profiles/MLKProfilesViewController.m; sourceTree = "<group>"; };
+		F87AD47F1921FC0B009B3A80 /* MLKShipmentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKShipmentTableViewController.h; path = Shipment/MLKShipmentTableViewController.h; sourceTree = "<group>"; };
+		F87AD4801921FC0B009B3A80 /* MLKShipmentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKShipmentTableViewController.m; path = Shipment/MLKShipmentTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F87AD4371921F642009B3A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87AD4401921F642009B3A80 /* CoreGraphics.framework in Frameworks */,
+				F87AD4421921F642009B3A80 /* UIKit.framework in Frameworks */,
+				F87AD43E1921F642009B3A80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87AD4581921F642009B3A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87AD45D1921F642009B3A80 /* XCTest.framework in Frameworks */,
+				F87AD45F1921F642009B3A80 /* UIKit.framework in Frameworks */,
+				F87AD45E1921F642009B3A80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F87AD4311921F642009B3A80 = {
+			isa = PBXGroup;
+			children = (
+				F87AD4431921F642009B3A80 /* MeeLink */,
+				F87AD4621921F642009B3A80 /* MeeLinkTests */,
+				F87AD43C1921F642009B3A80 /* Frameworks */,
+				F87AD43B1921F642009B3A80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F87AD43B1921F642009B3A80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD43A1921F642009B3A80 /* MeeLink.app */,
+				F87AD45B1921F642009B3A80 /* MeeLinkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F87AD43C1921F642009B3A80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD43D1921F642009B3A80 /* Foundation.framework */,
+				F87AD43F1921F642009B3A80 /* CoreGraphics.framework */,
+				F87AD4411921F642009B3A80 /* UIKit.framework */,
+				F87AD45C1921F642009B3A80 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F87AD4431921F642009B3A80 /* MeeLink */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD47B1921FBC9009B3A80 /* Profiles */,
+				F87AD47A1921FBC2009B3A80 /* Shipment */,
+				F87AD4761921FB4D009B3A80 /* Activities */,
+				F87AD4721921F923009B3A80 /* Moments */,
+				F87AD44C1921F642009B3A80 /* MLKAppDelegate.h */,
+				F87AD44D1921F642009B3A80 /* MLKAppDelegate.m */,
+				F87AD44F1921F642009B3A80 /* Main.storyboard */,
+				F87AD4521921F642009B3A80 /* MLKViewController.h */,
+				F87AD4531921F642009B3A80 /* MLKViewController.m */,
+				F87AD4551921F642009B3A80 /* Images.xcassets */,
+				F87AD4441921F642009B3A80 /* Supporting Files */,
+			);
+			path = MeeLink;
+			sourceTree = "<group>";
+		};
+		F87AD4441921F642009B3A80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD4451921F642009B3A80 /* MeeLink-Info.plist */,
+				F87AD4461921F642009B3A80 /* InfoPlist.strings */,
+				F87AD4491921F642009B3A80 /* main.m */,
+				F87AD44B1921F642009B3A80 /* MeeLink-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F87AD4621921F642009B3A80 /* MeeLinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD4681921F642009B3A80 /* MeeLinkTests.m */,
+				F87AD4631921F642009B3A80 /* Supporting Files */,
+			);
+			path = MeeLinkTests;
+			sourceTree = "<group>";
+		};
+		F87AD4631921F642009B3A80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD4641921F642009B3A80 /* MeeLinkTests-Info.plist */,
+				F87AD4651921F642009B3A80 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F87AD4721921F923009B3A80 /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD4731921F956009B3A80 /* MLKMomentTableViewController.h */,
+				F87AD4741921F956009B3A80 /* MLKMomentTableViewController.m */,
+			);
+			name = Moments;
+			sourceTree = "<group>";
+		};
+		F87AD4761921FB4D009B3A80 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD4771921FB69009B3A80 /* MLKActivitiesTableViewController.h */,
+				F87AD4781921FB69009B3A80 /* MLKActivitiesTableViewController.m */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
+		F87AD47A1921FBC2009B3A80 /* Shipment */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD47F1921FC0B009B3A80 /* MLKShipmentTableViewController.h */,
+				F87AD4801921FC0B009B3A80 /* MLKShipmentTableViewController.m */,
+			);
+			name = Shipment;
+			sourceTree = "<group>";
+		};
+		F87AD47B1921FBC9009B3A80 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				F87AD47C1921FBF3009B3A80 /* MLKProfilesViewController.h */,
+				F87AD47D1921FBF3009B3A80 /* MLKProfilesViewController.m */,
+			);
+			name = Profiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F87AD4391921F642009B3A80 /* MeeLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87AD46C1921F642009B3A80 /* Build configuration list for PBXNativeTarget "MeeLink" */;
+			buildPhases = (
+				F87AD4361921F642009B3A80 /* Sources */,
+				F87AD4371921F642009B3A80 /* Frameworks */,
+				F87AD4381921F642009B3A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeeLink;
+			productName = MeeLink;
+			productReference = F87AD43A1921F642009B3A80 /* MeeLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F87AD45A1921F642009B3A80 /* MeeLinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87AD46F1921F642009B3A80 /* Build configuration list for PBXNativeTarget "MeeLinkTests" */;
+			buildPhases = (
+				F87AD4571921F642009B3A80 /* Sources */,
+				F87AD4581921F642009B3A80 /* Frameworks */,
+				F87AD4591921F642009B3A80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F87AD4611921F642009B3A80 /* PBXTargetDependency */,
+			);
+			name = MeeLinkTests;
+			productName = MeeLinkTests;
+			productReference = F87AD45B1921F642009B3A80 /* MeeLinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F87AD4321921F642009B3A80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MLK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MeeLink;
+				TargetAttributes = {
+					F87AD45A1921F642009B3A80 = {
+						TestTargetID = F87AD4391921F642009B3A80;
+					};
+				};
+			};
+			buildConfigurationList = F87AD4351921F642009B3A80 /* Build configuration list for PBXProject "MeeLink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F87AD4311921F642009B3A80;
+			productRefGroup = F87AD43B1921F642009B3A80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F87AD4391921F642009B3A80 /* MeeLink */,
+				F87AD45A1921F642009B3A80 /* MeeLinkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F87AD4381921F642009B3A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87AD4561921F642009B3A80 /* Images.xcassets in Resources */,
+				F87AD4481921F642009B3A80 /* InfoPlist.strings in Resources */,
+				F87AD4511921F642009B3A80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87AD4591921F642009B3A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87AD4671921F642009B3A80 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F87AD4361921F642009B3A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87AD4751921F956009B3A80 /* MLKMomentTableViewController.m in Sources */,
+				F87AD4791921FB69009B3A80 /* MLKActivitiesTableViewController.m in Sources */,
+				F87AD44A1921F642009B3A80 /* main.m in Sources */,
+				F87AD4541921F642009B3A80 /* MLKViewController.m in Sources */,
+				F87AD44E1921F642009B3A80 /* MLKAppDelegate.m in Sources */,
+				F87AD4811921FC0B009B3A80 /* MLKShipmentTableViewController.m in Sources */,
+				F87AD47E1921FBF3009B3A80 /* MLKProfilesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87AD4571921F642009B3A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87AD4691921F642009B3A80 /* MeeLinkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F87AD4611921F642009B3A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F87AD4391921F642009B3A80 /* MeeLink */;
+			targetProxy = F87AD4601921F642009B3A80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F87AD4461921F642009B3A80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87AD4471921F642009B3A80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F87AD44F1921F642009B3A80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87AD4501921F642009B3A80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F87AD4651921F642009B3A80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87AD4661921F642009B3A80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F87AD46A1921F642009B3A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F87AD46B1921F642009B3A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F87AD46D1921F642009B3A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeeLink/MeeLink-Prefix.pch";
+				INFOPLIST_FILE = "MeeLink/MeeLink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F87AD46E1921F642009B3A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeeLink/MeeLink-Prefix.pch";
+				INFOPLIST_FILE = "MeeLink/MeeLink-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F87AD4701921F642009B3A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MeeLink.app/MeeLink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeeLink/MeeLink-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MeeLinkTests/MeeLinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F87AD4711921F642009B3A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MeeLink.app/MeeLink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MeeLink/MeeLink-Prefix.pch";
+				INFOPLIST_FILE = "MeeLinkTests/MeeLinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F87AD4351921F642009B3A80 /* Build configuration list for PBXProject "MeeLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87AD46A1921F642009B3A80 /* Debug */,
+				F87AD46B1921F642009B3A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87AD46C1921F642009B3A80 /* Build configuration list for PBXNativeTarget "MeeLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87AD46D1921F642009B3A80 /* Debug */,
+				F87AD46E1921F642009B3A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F87AD46F1921F642009B3A80 /* Build configuration list for PBXNativeTarget "MeeLinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87AD4701921F642009B3A80 /* Debug */,
+				F87AD4711921F642009B3A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F87AD4321921F642009B3A80 /* Project object */;
+}

@@ -7,6 +7,7 @@
 //
 
 #import "MLKMomentTableViewController.h"
+#import "MLKMomentTableViewCell.h"
 
 @interface MLKMomentTableViewController ()
 
@@ -32,6 +33,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView registerNib:[UINib nibWithNibName:@"MLKMomentTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"moments"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,15 +58,16 @@
     return 10;
 }
 
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 200;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"momentCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"moments" forIndexPath:indexPath];
     if (cell==nil) {
-        cell= [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"momentCell"];
+        cell= [[NSBundle mainBundle] loadNibNamed:@"MLKMomentTableViewCell" owner:nil options:nil][0];
     }
-    cell.textLabel.text= @"faked Moments Cell";
-    cell.detailTextLabel.text =[indexPath description];
     // Configure the cell...
     
     return cell;

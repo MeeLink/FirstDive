@@ -25,6 +25,17 @@
 		F87AD4791921FB69009B3A80 /* MLKActivitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4781921FB69009B3A80 /* MLKActivitiesTableViewController.m */; };
 		F87AD47E1921FBF3009B3A80 /* MLKProfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD47D1921FBF3009B3A80 /* MLKProfilesViewController.m */; };
 		F87AD4811921FC0B009B3A80 /* MLKShipmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4801921FC0B009B3A80 /* MLKShipmentTableViewController.m */; };
+		F8B885921924882B00DE8E94 /* MLKMomentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B885901924882B00DE8E94 /* MLKMomentTableViewCell.m */; };
+		F8B885931924882B00DE8E94 /* MLKMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B885911924882B00DE8E94 /* MLKMomentTableViewCell.xib */; };
+		F8B8859519248C0500DE8E94 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B8859419248C0500DE8E94 /* TencentOpenAPI.framework */; };
+		F8B8859719248C5300DE8E94 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8B8859619248C5300DE8E94 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		F8B8859919248C6C00DE8E94 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B8859819248C6C00DE8E94 /* Security.framework */; };
+		F8B8859B19248C8E00DE8E94 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B8859A19248C8E00DE8E94 /* libiconv.dylib */; };
+		F8B8859D19248C9900DE8E94 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B8859C19248C9900DE8E94 /* SystemConfiguration.framework */; };
+		F8B8859F19248CAD00DE8E94 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B8859E19248CAD00DE8E94 /* libsqlite3.dylib */; };
+		F8B885A119248CBF00DE8E94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B885A019248CBF00DE8E94 /* CoreTelephony.framework */; };
+		F8B885A319248CC900DE8E94 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B885A219248CC900DE8E94 /* libstdc++.dylib */; };
+		F8B885A519248CD300DE8E94 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B885A419248CD300DE8E94 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +76,18 @@
 		F87AD47D1921FBF3009B3A80 /* MLKProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKProfilesViewController.m; path = Profiles/MLKProfilesViewController.m; sourceTree = "<group>"; };
 		F87AD47F1921FC0B009B3A80 /* MLKShipmentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKShipmentTableViewController.h; path = Shipment/MLKShipmentTableViewController.h; sourceTree = "<group>"; };
 		F87AD4801921FC0B009B3A80 /* MLKShipmentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKShipmentTableViewController.m; path = Shipment/MLKShipmentTableViewController.m; sourceTree = "<group>"; };
+		F8B8858F1924882B00DE8E94 /* MLKMomentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKMomentTableViewCell.h; path = Moments/MLKMomentTableViewCell.h; sourceTree = "<group>"; };
+		F8B885901924882B00DE8E94 /* MLKMomentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKMomentTableViewCell.m; path = Moments/MLKMomentTableViewCell.m; sourceTree = "<group>"; };
+		F8B885911924882B00DE8E94 /* MLKMomentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MLKMomentTableViewCell.xib; path = Moments/MLKMomentTableViewCell.xib; sourceTree = "<group>"; };
+		F8B8859419248C0500DE8E94 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = MeeLink/thirdparty/TencentOpenAPI.framework; sourceTree = "<group>"; };
+		F8B8859619248C5300DE8E94 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = MeeLink/thirdparty/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		F8B8859819248C6C00DE8E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F8B8859A19248C8E00DE8E94 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		F8B8859C19248C9900DE8E94 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F8B8859E19248CAD00DE8E94 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F8B885A019248CBF00DE8E94 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F8B885A219248CC900DE8E94 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		F8B885A419248CD300DE8E94 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +95,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B885A519248CD300DE8E94 /* libz.dylib in Frameworks */,
+				F8B885A319248CC900DE8E94 /* libstdc++.dylib in Frameworks */,
+				F8B885A119248CBF00DE8E94 /* CoreTelephony.framework in Frameworks */,
+				F8B8859F19248CAD00DE8E94 /* libsqlite3.dylib in Frameworks */,
 				F87AD4401921F642009B3A80 /* CoreGraphics.framework in Frameworks */,
+				F8B8859D19248C9900DE8E94 /* SystemConfiguration.framework in Frameworks */,
+				F8B8859B19248C8E00DE8E94 /* libiconv.dylib in Frameworks */,
+				F8B8859919248C6C00DE8E94 /* Security.framework in Frameworks */,
+				F8B8859519248C0500DE8E94 /* TencentOpenAPI.framework in Frameworks */,
 				F87AD4421921F642009B3A80 /* UIKit.framework in Frameworks */,
 				F87AD43E1921F642009B3A80 /* Foundation.framework in Frameworks */,
 			);
@@ -94,6 +125,7 @@
 		F87AD4311921F642009B3A80 = {
 			isa = PBXGroup;
 			children = (
+				F8B8859619248C5300DE8E94 /* TencentOpenApi_IOS_Bundle.bundle */,
 				F87AD4431921F642009B3A80 /* MeeLink */,
 				F87AD4621921F642009B3A80 /* MeeLinkTests */,
 				F87AD43C1921F642009B3A80 /* Frameworks */,
@@ -113,6 +145,14 @@
 		F87AD43C1921F642009B3A80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8B885A419248CD300DE8E94 /* libz.dylib */,
+				F8B885A219248CC900DE8E94 /* libstdc++.dylib */,
+				F8B885A019248CBF00DE8E94 /* CoreTelephony.framework */,
+				F8B8859E19248CAD00DE8E94 /* libsqlite3.dylib */,
+				F8B8859C19248C9900DE8E94 /* SystemConfiguration.framework */,
+				F8B8859A19248C8E00DE8E94 /* libiconv.dylib */,
+				F8B8859819248C6C00DE8E94 /* Security.framework */,
+				F8B8859419248C0500DE8E94 /* TencentOpenAPI.framework */,
 				F87AD43D1921F642009B3A80 /* Foundation.framework */,
 				F87AD43F1921F642009B3A80 /* CoreGraphics.framework */,
 				F87AD4411921F642009B3A80 /* UIKit.framework */,
@@ -173,6 +213,9 @@
 			children = (
 				F87AD4731921F956009B3A80 /* MLKMomentTableViewController.h */,
 				F87AD4741921F956009B3A80 /* MLKMomentTableViewController.m */,
+				F8B8858F1924882B00DE8E94 /* MLKMomentTableViewCell.h */,
+				F8B885901924882B00DE8E94 /* MLKMomentTableViewCell.m */,
+				F8B885911924882B00DE8E94 /* MLKMomentTableViewCell.xib */,
 			);
 			name = Moments;
 			sourceTree = "<group>";
@@ -283,6 +326,8 @@
 			files = (
 				F87AD4561921F642009B3A80 /* Images.xcassets in Resources */,
 				F87AD4481921F642009B3A80 /* InfoPlist.strings in Resources */,
+				F8B885931924882B00DE8E94 /* MLKMomentTableViewCell.xib in Resources */,
+				F8B8859719248C5300DE8E94 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				F87AD4511921F642009B3A80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +349,7 @@
 			files = (
 				F87AD4751921F956009B3A80 /* MLKMomentTableViewController.m in Sources */,
 				F87AD4791921FB69009B3A80 /* MLKActivitiesTableViewController.m in Sources */,
+				F8B885921924882B00DE8E94 /* MLKMomentTableViewCell.m in Sources */,
 				F87AD44A1921F642009B3A80 /* main.m in Sources */,
 				F87AD4541921F642009B3A80 /* MLKViewController.m in Sources */,
 				F87AD44E1921F642009B3A80 /* MLKAppDelegate.m in Sources */,
@@ -433,9 +479,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MeeLink/thirdparty",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeeLink/MeeLink-Prefix.pch";
 				INFOPLIST_FILE = "MeeLink/MeeLink-Info.plist";
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -446,9 +497,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MeeLink/thirdparty",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeeLink/MeeLink-Prefix.pch";
 				INFOPLIST_FILE = "MeeLink/MeeLink-Info.plist";
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -513,6 +569,7 @@
 				F87AD46E1921F642009B3A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F87AD46F1921F642009B3A80 /* Build configuration list for PBXNativeTarget "MeeLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +578,7 @@
 				F87AD4711921F642009B3A80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

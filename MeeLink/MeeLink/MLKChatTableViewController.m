@@ -1,18 +1,18 @@
 //
-//  MLKShipmentTableViewController.m
+//  MLKChatTableViewController.m
 //  MeeLink
 //
-//  Created by huanwen cao on 5/13/14.
+//  Created by huanwen cao on 5/18/14.
 //  Copyright (c) 2014 MeeLink. All rights reserved.
 //
 
-#import "MLKShipmentTableViewController.h"
+#import "MLKChatTableViewController.h"
 
-@interface MLKShipmentTableViewController ()
+@interface MLKChatTableViewController ()
 
 @end
 
-@implementation MLKShipmentTableViewController
+@implementation MLKChatTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -41,31 +41,29 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+//
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//#warning Potentially incomplete method implementation.
+//    // Return the number of sections.
+//    return 0;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return 3;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"chatItem" forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

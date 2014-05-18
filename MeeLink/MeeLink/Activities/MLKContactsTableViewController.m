@@ -6,13 +6,15 @@
 //  Copyright (c) 2014 MeeLink. All rights reserved.
 //
 
-#import "MLKActivitiesTableViewController.h"
+#import "MLKContactsTableViewController.h"
+#import "MLKProfilesViewController.h"
 
-@interface MLKActivitiesTableViewController ()
+@interface MLKContactsTableViewController ()
 
+@property (nonatomic,strong) NSArray* contactsInfo;
 @end
 
-@implementation MLKActivitiesTableViewController
+@implementation MLKContactsTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,6 +29,7 @@
 {
     [super viewDidLoad];
     
+    self.contactsInfo= [NSArray arrayWithObjects:@"suny@San Jose",@"Marshall@sunnyvale",@"Huanwen@sunnyvale",nil];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -42,30 +45,39 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [self.contactsInfo count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"contacts"];
+    if (cell==nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"contacts"];
+    }
+    cell.textLabel.text= [self.contactsInfo objectAtIndex:indexPath.row];
     
     // Configure the cell...
     
     return cell;
 }
-*/
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"profile" sender:self];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
+    NSString* contactsInfo = [self.contactsInfo objectAtIndex:indexPath.row];
+    MLKProfilesViewController* targetController = [segue destinationViewController];
+    targetController.contactsInfo=contactsInfo;
+}
 
 /*
 // Override to support conditional editing of the table view.

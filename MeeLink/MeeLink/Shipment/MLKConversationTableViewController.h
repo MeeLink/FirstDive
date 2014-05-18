@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MLKShipmentTableViewController : UITableViewController
+@interface MLKConversationTableViewController : UITableViewController
 
 @end

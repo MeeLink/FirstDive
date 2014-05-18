@@ -10,4 +10,6 @@
 
 @interface MLKProfilesViewController : UIViewController
 
+@property (nonatomic,strong) NSString* contactsInfo;
+
 @end

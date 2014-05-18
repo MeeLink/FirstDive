@@ -1,19 +1,20 @@
 //
-//  MLKMomentTableViewController.m
+//  MLKShipmentTableViewController.m
 //  MeeLink
 //
-//  Created by huanwen cao on 5/12/14.
+//  Created by huanwen cao on 5/13/14.
 //  Copyright (c) 2014 MeeLink. All rights reserved.
 //
 
-#import "MLKMomentTableViewController.h"
-#import "MLKMomentTableViewCell.h"
+#import "MLKConversationTableViewController.h"
 
-@interface MLKMomentTableViewController ()
+@interface MLKConversationTableViewController ()
+
+@property (nonatomic,strong) NSArray* conversations;
 
 @end
 
-@implementation MLKMomentTableViewController
+@implementation MLKConversationTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,13 +28,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSArray* sunny= [NSArray arrayWithObjects:@"iPhone",@"iPad",nil];
+    NSArray* huanwen= [NSArray arrayWithObjects:@"iMac",@"MacMini",nil];
+    NSArray* mashall= [NSArray arrayWithObjects:@"Galaxy",@"ThinkPad",nil];
+    NSDictionary* dic1= [NSDictionary dictionaryWithObjectsAndKeys:sunny,@"item",@"sunny",@"name", nil];
+    NSDictionary* dic2= [NSDictionary dictionaryWithObjectsAndKeys:huanwen,@"item",@"huanwen",@"name", nil];
+    NSDictionary* dic3= [NSDictionary dictionaryWithObjectsAndKeys:mashall,@"item",@"mashall",@"name", nil];
+    self.conversations= [NSArray arrayWithObjects:dic1,dic2,dic3, nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [self.tableView registerNib:[UINib nibWithNibName:@"MLKMomentTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"moments"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,36 +51,42 @@
 
 #pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 1;
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return [self.conversations count];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    // Return the number of rows in the section.
-    return 10;
+    NSDictionary* dic = [self.conversations objectAtIndex:section];
+    NSArray* array= dic[@"item"];
+    return [array count];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return 120;
+    NSDictionary* dic= [self.conversations objectAtIndex:section];
+    return dic[@"name"];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"moments" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"conversation"];
     if (cell==nil) {
-        cell= [[NSBundle mainBundle] loadNibNamed:@"MLKMomentTableViewCell" owner:nil options:nil][0];
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"conversation"];
     }
-    // Configure the cell...
+    NSDictionary* dict = [self.conversations objectAtIndex:indexPath.section];
+    NSArray* array = dict[@"item"];
+    cell.textLabel.text=array[indexPath.row];
+    
     
     return cell;
 }
 
-
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"continueChat" sender:self];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

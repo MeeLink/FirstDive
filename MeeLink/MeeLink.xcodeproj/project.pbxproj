@@ -22,9 +22,9 @@
 		F87AD4671921F642009B3A80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F87AD4651921F642009B3A80 /* InfoPlist.strings */; };
 		F87AD4691921F642009B3A80 /* MeeLinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4681921F642009B3A80 /* MeeLinkTests.m */; };
 		F87AD4751921F956009B3A80 /* MLKMomentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4741921F956009B3A80 /* MLKMomentTableViewController.m */; };
-		F87AD4791921FB69009B3A80 /* MLKActivitiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4781921FB69009B3A80 /* MLKActivitiesTableViewController.m */; };
+		F87AD4791921FB69009B3A80 /* MLKContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4781921FB69009B3A80 /* MLKContactsTableViewController.m */; };
 		F87AD47E1921FBF3009B3A80 /* MLKProfilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD47D1921FBF3009B3A80 /* MLKProfilesViewController.m */; };
-		F87AD4811921FC0B009B3A80 /* MLKShipmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4801921FC0B009B3A80 /* MLKShipmentTableViewController.m */; };
+		F87AD4811921FC0B009B3A80 /* MLKConversationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87AD4801921FC0B009B3A80 /* MLKConversationTableViewController.m */; };
 		F8B885921924882B00DE8E94 /* MLKMomentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B885901924882B00DE8E94 /* MLKMomentTableViewCell.m */; };
 		F8B885931924882B00DE8E94 /* MLKMomentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B885911924882B00DE8E94 /* MLKMomentTableViewCell.xib */; };
 		F8B8859519248C0500DE8E94 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B8859419248C0500DE8E94 /* TencentOpenAPI.framework */; };
@@ -36,6 +36,7 @@
 		F8B885A119248CBF00DE8E94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B885A019248CBF00DE8E94 /* CoreTelephony.framework */; };
 		F8B885A319248CC900DE8E94 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B885A219248CC900DE8E94 /* libstdc++.dylib */; };
 		F8B885A519248CD300DE8E94 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B885A419248CD300DE8E94 /* libz.dylib */; };
+		F8BF203519289B0800FC3A53 /* MLKChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF203419289B0800FC3A53 /* MLKChatTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,12 +71,12 @@
 		F87AD4681921F642009B3A80 /* MeeLinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeeLinkTests.m; sourceTree = "<group>"; };
 		F87AD4731921F956009B3A80 /* MLKMomentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKMomentTableViewController.h; path = Moments/MLKMomentTableViewController.h; sourceTree = "<group>"; };
 		F87AD4741921F956009B3A80 /* MLKMomentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKMomentTableViewController.m; path = Moments/MLKMomentTableViewController.m; sourceTree = "<group>"; };
-		F87AD4771921FB69009B3A80 /* MLKActivitiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKActivitiesTableViewController.h; path = Activities/MLKActivitiesTableViewController.h; sourceTree = "<group>"; };
-		F87AD4781921FB69009B3A80 /* MLKActivitiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKActivitiesTableViewController.m; path = Activities/MLKActivitiesTableViewController.m; sourceTree = "<group>"; };
+		F87AD4771921FB69009B3A80 /* MLKContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKContactsTableViewController.h; path = Activities/MLKContactsTableViewController.h; sourceTree = "<group>"; };
+		F87AD4781921FB69009B3A80 /* MLKContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKContactsTableViewController.m; path = Activities/MLKContactsTableViewController.m; sourceTree = "<group>"; };
 		F87AD47C1921FBF3009B3A80 /* MLKProfilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKProfilesViewController.h; path = Profiles/MLKProfilesViewController.h; sourceTree = "<group>"; };
 		F87AD47D1921FBF3009B3A80 /* MLKProfilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKProfilesViewController.m; path = Profiles/MLKProfilesViewController.m; sourceTree = "<group>"; };
-		F87AD47F1921FC0B009B3A80 /* MLKShipmentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKShipmentTableViewController.h; path = Shipment/MLKShipmentTableViewController.h; sourceTree = "<group>"; };
-		F87AD4801921FC0B009B3A80 /* MLKShipmentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKShipmentTableViewController.m; path = Shipment/MLKShipmentTableViewController.m; sourceTree = "<group>"; };
+		F87AD47F1921FC0B009B3A80 /* MLKConversationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKConversationTableViewController.h; path = Shipment/MLKConversationTableViewController.h; sourceTree = "<group>"; };
+		F87AD4801921FC0B009B3A80 /* MLKConversationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKConversationTableViewController.m; path = Shipment/MLKConversationTableViewController.m; sourceTree = "<group>"; };
 		F8B8858F1924882B00DE8E94 /* MLKMomentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKMomentTableViewCell.h; path = Moments/MLKMomentTableViewCell.h; sourceTree = "<group>"; };
 		F8B885901924882B00DE8E94 /* MLKMomentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKMomentTableViewCell.m; path = Moments/MLKMomentTableViewCell.m; sourceTree = "<group>"; };
 		F8B885911924882B00DE8E94 /* MLKMomentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MLKMomentTableViewCell.xib; path = Moments/MLKMomentTableViewCell.xib; sourceTree = "<group>"; };
@@ -88,6 +89,8 @@
 		F8B885A019248CBF00DE8E94 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F8B885A219248CC900DE8E94 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		F8B885A419248CD300DE8E94 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F8BF203319289B0800FC3A53 /* MLKChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLKChatTableViewController.h; sourceTree = "<group>"; };
+		F8BF203419289B0800FC3A53 /* MLKChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLKChatTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				F87AD4531921F642009B3A80 /* MLKViewController.m */,
 				F87AD4551921F642009B3A80 /* Images.xcassets */,
 				F87AD4441921F642009B3A80 /* Supporting Files */,
+				F8BF203319289B0800FC3A53 /* MLKChatTableViewController.h */,
+				F8BF203419289B0800FC3A53 /* MLKChatTableViewController.m */,
 			);
 			path = MeeLink;
 			sourceTree = "<group>";
@@ -223,8 +228,8 @@
 		F87AD4761921FB4D009B3A80 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
-				F87AD4771921FB69009B3A80 /* MLKActivitiesTableViewController.h */,
-				F87AD4781921FB69009B3A80 /* MLKActivitiesTableViewController.m */,
+				F87AD4771921FB69009B3A80 /* MLKContactsTableViewController.h */,
+				F87AD4781921FB69009B3A80 /* MLKContactsTableViewController.m */,
 			);
 			name = Activities;
 			sourceTree = "<group>";
@@ -232,8 +237,8 @@
 		F87AD47A1921FBC2009B3A80 /* Shipment */ = {
 			isa = PBXGroup;
 			children = (
-				F87AD47F1921FC0B009B3A80 /* MLKShipmentTableViewController.h */,
-				F87AD4801921FC0B009B3A80 /* MLKShipmentTableViewController.m */,
+				F87AD47F1921FC0B009B3A80 /* MLKConversationTableViewController.h */,
+				F87AD4801921FC0B009B3A80 /* MLKConversationTableViewController.m */,
 			);
 			name = Shipment;
 			sourceTree = "<group>";
@@ -348,12 +353,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F87AD4751921F956009B3A80 /* MLKMomentTableViewController.m in Sources */,
-				F87AD4791921FB69009B3A80 /* MLKActivitiesTableViewController.m in Sources */,
+				F87AD4791921FB69009B3A80 /* MLKContactsTableViewController.m in Sources */,
 				F8B885921924882B00DE8E94 /* MLKMomentTableViewCell.m in Sources */,
 				F87AD44A1921F642009B3A80 /* main.m in Sources */,
+				F8BF203519289B0800FC3A53 /* MLKChatTableViewController.m in Sources */,
 				F87AD4541921F642009B3A80 /* MLKViewController.m in Sources */,
 				F87AD44E1921F642009B3A80 /* MLKAppDelegate.m in Sources */,
-				F87AD4811921FC0B009B3A80 /* MLKShipmentTableViewController.m in Sources */,
+				F87AD4811921FC0B009B3A80 /* MLKConversationTableViewController.m in Sources */,
 				F87AD47E1921FBF3009B3A80 /* MLKProfilesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

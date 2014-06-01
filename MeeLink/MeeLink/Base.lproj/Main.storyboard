@@ -267,6 +267,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="avatarView" destination="Nxw-zQ-u5w" id="DCr-qM-CKa"/>
                         <outlet property="item" destination="vX1-DY-bCQ" id="AXW-6I-dCT"/>
                         <outlet property="nameLabel" destination="F0C-cF-J2k" id="puH-zr-36J"/>
                         <outlet property="segmentControl" destination="2DS-1Y-BBX" id="9NJ-6z-bM9"/>
@@ -297,7 +298,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="GEY-wS-d0F">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="qIZ-8E-WTW" sceneMemberID="viewController">
+                <tabBarController restorationIdentifier="rootTabBar" storyboardIdentifier="rootTabBar" definesPresentationContext="YES" id="qIZ-8E-WTW" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hlb-Im-VnZ">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -333,7 +334,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="R3U-Ay-aWa"/>
+        <segue reference="YPo-Tv-SGL"/>
         <segue reference="rfb-Gp-SYG"/>
     </inferredMetricsTieBreakers>
 </document>

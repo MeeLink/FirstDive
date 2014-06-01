@@ -37,7 +37,11 @@
 		F8B885A319248CC900DE8E94 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B885A219248CC900DE8E94 /* libstdc++.dylib */; };
 		F8B885A519248CD300DE8E94 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B885A419248CD300DE8E94 /* libz.dylib */; };
 		F8BC2C75192B1F50006C249F /* FTUE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BC2C74192B1F50006C249F /* FTUE.storyboard */; };
+		F8BD454219384FED0083FB39 /* MLKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD454119384FED0083FB39 /* MLKLoginViewController.m */; };
 		F8BF203519289B0800FC3A53 /* MLKChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BF203419289B0800FC3A53 /* MLKChatTableViewController.m */; };
+		F8C7747F192DBD0A00964D5F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C7747E192DBD0A00964D5F /* Parse.framework */; };
+		F8C77481192DBEB700964D5F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C77480192DBEB700964D5F /* MobileCoreServices.framework */; };
+		F8C77485192DC74000964D5F /* MLKFTUEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C77484192DC74000964D5F /* MLKFTUEViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,9 +94,15 @@
 		F8B885A019248CBF00DE8E94 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F8B885A219248CC900DE8E94 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		F8B885A419248CD300DE8E94 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		F8BC2C74192B1F50006C249F /* FTUE.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FTUE.storyboard; sourceTree = "<group>"; };
+		F8BC2C74192B1F50006C249F /* FTUE.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FTUE.storyboard; path = ../FTUE.storyboard; sourceTree = "<group>"; };
+		F8BD454019384FED0083FB39 /* MLKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKLoginViewController.h; path = FTUE/MLKLoginViewController.h; sourceTree = "<group>"; };
+		F8BD454119384FED0083FB39 /* MLKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKLoginViewController.m; path = FTUE/MLKLoginViewController.m; sourceTree = "<group>"; };
 		F8BF203319289B0800FC3A53 /* MLKChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLKChatTableViewController.h; sourceTree = "<group>"; };
 		F8BF203419289B0800FC3A53 /* MLKChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLKChatTableViewController.m; sourceTree = "<group>"; };
+		F8C7747E192DBD0A00964D5F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = MeeLink/thirdparty/Parse.framework; sourceTree = "<group>"; };
+		F8C77480192DBEB700964D5F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F8C77483192DC74000964D5F /* MLKFTUEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKFTUEViewController.h; path = FTUE/MLKFTUEViewController.h; sourceTree = "<group>"; };
+		F8C77484192DC74000964D5F /* MLKFTUEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKFTUEViewController.m; path = FTUE/MLKFTUEViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C77481192DBEB700964D5F /* MobileCoreServices.framework in Frameworks */,
 				F8B885A519248CD300DE8E94 /* libz.dylib in Frameworks */,
 				F8B885A319248CC900DE8E94 /* libstdc++.dylib in Frameworks */,
 				F8B885A119248CBF00DE8E94 /* CoreTelephony.framework in Frameworks */,
@@ -110,6 +121,7 @@
 				F8B8859919248C6C00DE8E94 /* Security.framework in Frameworks */,
 				F8B8859519248C0500DE8E94 /* TencentOpenAPI.framework in Frameworks */,
 				F87AD4421921F642009B3A80 /* UIKit.framework in Frameworks */,
+				F8C7747F192DBD0A00964D5F /* Parse.framework in Frameworks */,
 				F87AD43E1921F642009B3A80 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +142,6 @@
 		F87AD4311921F642009B3A80 = {
 			isa = PBXGroup;
 			children = (
-				F8BC2C74192B1F50006C249F /* FTUE.storyboard */,
 				F8B8859619248C5300DE8E94 /* TencentOpenApi_IOS_Bundle.bundle */,
 				F87AD4431921F642009B3A80 /* MeeLink */,
 				F87AD4621921F642009B3A80 /* MeeLinkTests */,
@@ -151,6 +162,8 @@
 		F87AD43C1921F642009B3A80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8C77480192DBEB700964D5F /* MobileCoreServices.framework */,
+				F8C7747E192DBD0A00964D5F /* Parse.framework */,
 				F8B885A419248CD300DE8E94 /* libz.dylib */,
 				F8B885A219248CC900DE8E94 /* libstdc++.dylib */,
 				F8B885A019248CBF00DE8E94 /* CoreTelephony.framework */,
@@ -170,6 +183,8 @@
 		F87AD4431921F642009B3A80 /* MeeLink */ = {
 			isa = PBXGroup;
 			children = (
+				F8C77482192DC71B00964D5F /* FTUE */,
+				F8BC2C74192B1F50006C249F /* FTUE.storyboard */,
 				F87AD47B1921FBC9009B3A80 /* Profiles */,
 				F87AD47A1921FBC2009B3A80 /* Shipment */,
 				F87AD4761921FB4D009B3A80 /* Activities */,
@@ -253,6 +268,17 @@
 				F87AD47D1921FBF3009B3A80 /* MLKProfilesViewController.m */,
 			);
 			name = Profiles;
+			sourceTree = "<group>";
+		};
+		F8C77482192DC71B00964D5F /* FTUE */ = {
+			isa = PBXGroup;
+			children = (
+				F8C77483192DC74000964D5F /* MLKFTUEViewController.h */,
+				F8C77484192DC74000964D5F /* MLKFTUEViewController.m */,
+				F8BD454019384FED0083FB39 /* MLKLoginViewController.h */,
+				F8BD454119384FED0083FB39 /* MLKLoginViewController.m */,
+			);
+			name = FTUE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +387,9 @@
 				F8B885921924882B00DE8E94 /* MLKMomentTableViewCell.m in Sources */,
 				F87AD44A1921F642009B3A80 /* main.m in Sources */,
 				F8BF203519289B0800FC3A53 /* MLKChatTableViewController.m in Sources */,
+				F8C77485192DC74000964D5F /* MLKFTUEViewController.m in Sources */,
 				F87AD4541921F642009B3A80 /* MLKViewController.m in Sources */,
+				F8BD454219384FED0083FB39 /* MLKLoginViewController.m in Sources */,
 				F87AD44E1921F642009B3A80 /* MLKAppDelegate.m in Sources */,
 				F87AD4811921FC0B009B3A80 /* MLKConversationTableViewController.m in Sources */,
 				F87AD47E1921FBF3009B3A80 /* MLKProfilesViewController.m in Sources */,

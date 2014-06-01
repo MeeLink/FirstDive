@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B0F01BEE-4296-4172-AE85-F31070563C63</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MeeLink</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FE2A06B1-DB8F-4119-8E02-E5C624B5064B</key>
+		<string>https://github.com/MeeLink/FirstDive</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MeeLink/MeeLink.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FE2A06B1-DB8F-4119-8E02-E5C624B5064B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MeeLink/FirstDive</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FE2A06B1-DB8F-4119-8E02-E5C624B5064B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FE2A06B1-DB8F-4119-8E02-E5C624B5064B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FirstDive</string>
+		</dict>
+	</array>
+</dict>
+</plist>

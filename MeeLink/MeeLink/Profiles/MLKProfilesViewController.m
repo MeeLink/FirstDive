@@ -7,6 +7,7 @@
 //
 
 #import "MLKProfilesViewController.h"
+#import <Parse/Parse.h>
 
 @interface MLKProfilesViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -16,6 +17,7 @@
 @property (nonatomic,strong) NSArray* addresses;
 @property (nonatomic,strong) IBOutlet UILabel* nameLabel;
 @property (nonatomic,strong) IBOutlet UIBarButtonItem* item;
+@property (nonatomic,strong) IBOutlet UIImageView* avatarView;
 @end
 
 @implementation MLKProfilesViewController
@@ -33,6 +35,19 @@
 {
     [super viewDidLoad];
     self.addresses= [NSArray arrayWithObjects:@"101 Santa Clara ave,Santa Clara", nil];
+    self.nameLabel.text= [PFUser currentUser][@"firstName"];
+    PFObject* avatarObject= [PFUser currentUser][@"avatar"];
+    if (avatarObject!=nil) {
+        [avatarObject fetchIfNeededInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+            if (!error) {
+                PFFile* file= avatarObject[@"imageFile"];
+                NSData* data = [file getData];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.avatarView setImage:[UIImage imageWithData:data]];
+                });
+            }
+        }];
+            }
     if (self.contactsInfo!=nil) {
         self.nameLabel.text=self.contactsInfo;
         [self.item setImage:[UIImage imageNamed:@"startChat"]];

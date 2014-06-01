@@ -7,12 +7,22 @@
 //
 
 #import "MLKAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation MLKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"tMr6rFsCJKt8HAyIZKrgKLhjcem334FtCERE5Av5"
+                  clientKey:@"xb04eSOAEhZj7y3GN0JRh7SJjycDDlG3aSyESGLA"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+    if ([PFUser currentUser]!=nil) {
+        UIStoryboard* storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *initViewController = [storyBoard instantiateInitialViewController];
+        [self.window setRootViewController:initViewController];
+    }
     return YES;
 }
 							

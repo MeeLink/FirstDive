@@ -27,7 +27,7 @@
 {
     if ([self.email.text length]==0 || [self.password.text length]==0) {
         NSString* error= @"your email or password is empty .";
-        UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"loginError" message:error delegate:nil cancelButtonTitle:nil otherButtonTitles: nil];
+        UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"loginError" message:error delegate:nil cancelButtonTitle:@"dismiss" otherButtonTitles: nil];
         [alert show];
     }
     [self.indicator startAnimating];
@@ -38,7 +38,7 @@
              vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
              [self presentViewController:vc animated:YES completion:NULL];
          }else{
-             UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"loginError" message:[error localizedDescription] delegate:nil cancelButtonTitle:nil otherButtonTitles: nil];
+             UIAlertView* alert = [[UIAlertView alloc]initWithTitle:@"loginError" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"dismiss" otherButtonTitles: nil];
              [alert show];
          }
      }];

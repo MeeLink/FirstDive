@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface MLKFTUEViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface MLKFTUEViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate>
 @property (nonatomic,strong) PFObject* imageObject;
 
 @end
@@ -36,6 +36,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(BOOL) textFieldShouldReturn: (UITextField *) textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 -(IBAction)onTapAvatar:(id)sender
 {
@@ -73,8 +77,9 @@
         errorMessage=@"email and password can't be empty";
     }
     if (errorMessage!=nil) {
-        UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"SignUp Error" message:errorMessage delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+        UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"SignUp Error" message:errorMessage delegate:nil cancelButtonTitle:@"dismiss" otherButtonTitles:nil];
         [alertView show];
+        return;
     }
     PFUser *user = [PFUser user];
     user.username = self.email.text;
@@ -97,7 +102,7 @@
                     [self presentViewController:vc animated:YES completion:NULL];
                 }else{
                     NSString *errorString = [error userInfo][@"error"];
-                    UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"SignUp Error" message:errorString delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+                    UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"SignUp Error" message:errorString delegate:nil cancelButtonTitle:@"dismiss" otherButtonTitles:nil];
                     [alertView show];
 
                 }
@@ -107,7 +112,7 @@
         } else {
             [self.indicator stopAnimating];
             NSString *errorString = [error userInfo][@"error"];
-            UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"SignUp Error" message:errorString delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+            UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"SignUp Error" message:errorString delegate:nil cancelButtonTitle:@"dismiss" otherButtonTitles:nil];
             [alertView show];
         }
     }];

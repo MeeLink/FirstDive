@@ -42,6 +42,11 @@
 		F8C7747F192DBD0A00964D5F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C7747E192DBD0A00964D5F /* Parse.framework */; };
 		F8C77481192DBEB700964D5F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C77480192DBEB700964D5F /* MobileCoreServices.framework */; };
 		F8C77485192DC74000964D5F /* MLKFTUEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C77484192DC74000964D5F /* MLKFTUEViewController.m */; };
+		F8CE4999193EE3D500602FC9 /* RDVKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE4997193EE3D500602FC9 /* RDVKeyboardAvoidingScrollView.m */; };
+		F8CE49A3193EE5A100602FC9 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE499C193EE5A100602FC9 /* TPKeyboardAvoidingCollectionView.m */; };
+		F8CE49A4193EE5A100602FC9 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE499E193EE5A100602FC9 /* TPKeyboardAvoidingScrollView.m */; };
+		F8CE49A5193EE5A100602FC9 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE49A0193EE5A100602FC9 /* TPKeyboardAvoidingTableView.m */; };
+		F8CE49A6193EE5A100602FC9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CE49A2193EE5A100602FC9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +108,16 @@
 		F8C77480192DBEB700964D5F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F8C77483192DC74000964D5F /* MLKFTUEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MLKFTUEViewController.h; path = FTUE/MLKFTUEViewController.h; sourceTree = "<group>"; };
 		F8C77484192DC74000964D5F /* MLKFTUEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MLKFTUEViewController.m; path = FTUE/MLKFTUEViewController.m; sourceTree = "<group>"; };
+		F8CE4997193EE3D500602FC9 /* RDVKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		F8CE4998193EE3D500602FC9 /* RDVKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		F8CE499B193EE5A100602FC9 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		F8CE499C193EE5A100602FC9 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		F8CE499D193EE5A100602FC9 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		F8CE499E193EE5A100602FC9 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		F8CE499F193EE5A100602FC9 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		F8CE49A0193EE5A100602FC9 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		F8CE49A1193EE5A100602FC9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		F8CE49A2193EE5A100602FC9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +198,7 @@
 		F87AD4431921F642009B3A80 /* MeeLink */ = {
 			isa = PBXGroup;
 			children = (
+				F8CE4993193EE37B00602FC9 /* UIControls */,
 				F8C77482192DC71B00964D5F /* FTUE */,
 				F8BC2C74192B1F50006C249F /* FTUE.storyboard */,
 				F87AD47B1921FBC9009B3A80 /* Profiles */,
@@ -279,6 +295,31 @@
 				F8BD454119384FED0083FB39 /* MLKLoginViewController.m */,
 			);
 			name = FTUE;
+			sourceTree = "<group>";
+		};
+		F8CE4993193EE37B00602FC9 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE499A193EE5A100602FC9 /* TPKeyboardAvoiding */,
+				F8CE4997193EE3D500602FC9 /* RDVKeyboardAvoidingScrollView.m */,
+				F8CE4998193EE3D500602FC9 /* RDVKeyboardAvoidingScrollView.h */,
+			);
+			name = UIControls;
+			sourceTree = "<group>";
+		};
+		F8CE499A193EE5A100602FC9 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				F8CE499B193EE5A100602FC9 /* TPKeyboardAvoidingCollectionView.h */,
+				F8CE499C193EE5A100602FC9 /* TPKeyboardAvoidingCollectionView.m */,
+				F8CE499D193EE5A100602FC9 /* TPKeyboardAvoidingScrollView.h */,
+				F8CE499E193EE5A100602FC9 /* TPKeyboardAvoidingScrollView.m */,
+				F8CE499F193EE5A100602FC9 /* TPKeyboardAvoidingTableView.h */,
+				F8CE49A0193EE5A100602FC9 /* TPKeyboardAvoidingTableView.m */,
+				F8CE49A1193EE5A100602FC9 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				F8CE49A2193EE5A100602FC9 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,10 +429,15 @@
 				F87AD44A1921F642009B3A80 /* main.m in Sources */,
 				F8BF203519289B0800FC3A53 /* MLKChatTableViewController.m in Sources */,
 				F8C77485192DC74000964D5F /* MLKFTUEViewController.m in Sources */,
+				F8CE49A5193EE5A100602FC9 /* TPKeyboardAvoidingTableView.m in Sources */,
 				F87AD4541921F642009B3A80 /* MLKViewController.m in Sources */,
+				F8CE49A4193EE5A100602FC9 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				F8BD454219384FED0083FB39 /* MLKLoginViewController.m in Sources */,
 				F87AD44E1921F642009B3A80 /* MLKAppDelegate.m in Sources */,
 				F87AD4811921FC0B009B3A80 /* MLKConversationTableViewController.m in Sources */,
+				F8CE4999193EE3D500602FC9 /* RDVKeyboardAvoidingScrollView.m in Sources */,
+				F8CE49A6193EE5A100602FC9 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				F8CE49A3193EE5A100602FC9 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				F87AD47E1921FBF3009B3A80 /* MLKProfilesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
